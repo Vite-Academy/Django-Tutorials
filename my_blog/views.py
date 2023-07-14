@@ -1,9 +1,10 @@
-from django.http import HttpResponse
+# from django.http import HttpResponse
 from django.shortcuts import render
 
 def home(req):
     # return HttpResponse("<h1>Home</h1>")
-    return render(req, "index.html")
+    context = {'name': 'Sardor'}
+    return render(req, "index.html", context)
 
 def about(req):
     return render(req, "about.html")
