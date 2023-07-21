@@ -1,8 +1,12 @@
 # from django.http import HttpResponse
 from django.shortcuts import render
+# from django.http import HttpResponse, JsonResponse
+from .models import Contact
+
 
 def home(req):
     # return HttpResponse("<h1>Home</h1>")
+    # return JsonResponse({'text': 'Just rendering some JSON :)'})
     context = {'name': 'Sardor'}
     return render(req, "pages/home.html", context)
 
@@ -16,4 +20,6 @@ def blog(req):
     return render(req, "pages/blog.html")
 
 def contact(req):
-    return render(req, "pages/contact.html")
+    data = Contact.objects.all()
+    context = {'data': data}
+    return render(req, "pages/contact.html", context)

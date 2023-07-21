@@ -38,7 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'my_blog.apps.MyBlogConfig',
+    
+    # Local apps
+    # 'my_blog.apps.MyBlogConfig',
+    'barbershop.apps.BarbershopConfig'
 ]
 
 MIDDLEWARE = [
