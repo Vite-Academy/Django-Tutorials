@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Contact
+from .models import *
 # from django.http import HttpResponse
 # from django.template import loader
 
@@ -11,18 +11,42 @@ from .models import Contact
 # -------------------
 
 def home(req):
-    return render(req, "pages/home.html")    
+    branche = Branche.objects.all()
+    context = {
+        "branche": branche,
+    }
+    return render(req, "pages/home.html", context)   
+ 
 
 def story(req):
-    return render(req, "pages/story.html")    
+    branche = Branche.objects.all()
+    context = {
+        "branche": branche,
+    }
+    return render(req, "pages/story.html", context)   
+ 
 
 def services(req):
-    return render(req, "pages/services.html") 
+    branche = Branche.objects.all()
+    context = {
+        "branche": branche,
+    }
+    return render(req, "pages/services.html", context) 
+
 
 def price(req):
-    return render(req, "pages/price.html") 
+    branche = Branche.objects.all()
+    context = {
+        "branche": branche,
+    }
+    return render(req, "pages/price.html", context) 
+
 
 def contact(req):
-    data = Contact.objects.all()
-    context = {"data": data}
+    contact = Contact.objects.all()
+    branche = Branche.objects.all()
+    context = {
+        "contact": contact,
+        "branche": branche,
+    }
     return render(req, "pages/contact.html", context) 

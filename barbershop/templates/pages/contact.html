@@ -1,10 +1,8 @@
 {% extends 'base.html' %}
-
 {% load static %}
-
 {% block contact %}
 
-{% for i in data %}
+{% for i in contact %}
 <section class="contact-section" id="section_5">
     <div class="section-padding section-bg">
         <div class="container">
@@ -86,5 +84,6 @@
 </section>
 {% endfor %}
 
+{% include 'layouts/footer.html' %}
 
 {% endblock contact %}
