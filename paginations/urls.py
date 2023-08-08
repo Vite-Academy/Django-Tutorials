@@ -3,6 +3,6 @@ from django.urls import path
 from .views import *
 
 urlpatterns = [
-    path("", home, name="home"),
-
+    path("", main, name="main"),
+    path("tutorials/", tutorials, name="tutorials")
 ]

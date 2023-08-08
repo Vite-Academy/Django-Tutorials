@@ -5,8 +5,12 @@ from django.views.generic import ListView, DetailView
 from .models import *
 
 
-def home(req):
+def main(req):
     # return HttpResponse("<h1>Home</h1>")
     # return JsonResponse({'text': 'Just rendering some JSON :)'})
     context = {'name': 'Sardor'}
-    return render(req, "home.html", context)
+    return render(req, "main.html", context)
+
+def tutorials(req):
+    context = {'name': 'Sardor'}
+    return render(req, 'tutorials.html', context)
