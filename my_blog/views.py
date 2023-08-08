@@ -1,7 +1,7 @@
 # from django.http import HttpResponse
 from typing import Any, Dict
 from django.shortcuts import render
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 # from django.http import HttpResponse, JsonResponse
 from .models import *
 
@@ -24,13 +24,19 @@ def portfolio(req):
 class BlogPageView(ListView):
     model = Blog
     template_name = "pages/blog.html"
-    
+
     def get_context_data(self, **kwargs: Any) -> Dict[str, Any]:
         context = super().get_context_data(**kwargs)
         # Add in the publisher
         context["blog"] = Blog.objects.all()
         return context
-    
+
+
+class DetailBlogView(DetailView):
+    model = Blog
+    template_name = "pages/blog_single.html"
+
+
 def contact(req):
     data = Contact.objects.all()
     context = {'data': data}
