@@ -25,7 +25,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'paginations.apps.PaginationsConfig'
+    # 'paginations.apps.PaginationsConfig',
+    # 'models.apps.ModelsConfig'
+    # 'forms.apps.FormsConfig'
+    'todo.apps.TodoConfig'
 ]
 
 MIDDLEWARE = [
