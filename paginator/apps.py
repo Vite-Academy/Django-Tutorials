@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class PaginationsConfig(AppConfig):
+class PaginatorConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'paginations'
+    name = 'paginator'

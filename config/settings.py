@@ -19,16 +19,17 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'paginations.apps.PaginationsConfig',
-    'models.apps.ModelsConfig'
+    # 'models.apps.ModelsConfig'
     # 'forms.apps.FormsConfig'
-    # 'todo.apps.TodoConfig'
+    # 'todo.apps.TodoConfig',
+    'paginator.apps.PaginatorConfig',
 ]
 
 MIDDLEWARE = [
