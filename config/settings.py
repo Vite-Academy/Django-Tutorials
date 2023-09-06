@@ -29,7 +29,8 @@ INSTALLED_APPS = [
     # 'models.apps.ModelsConfig'
     # 'forms.apps.FormsConfig'
     # 'todo.apps.TodoConfig',
-    'paginator.apps.PaginatorConfig',
+    # 'paginator.apps.PaginatorConfig',
+    'user.apps.UserConfig',
 ]
 
 MIDDLEWARE = [
@@ -92,6 +93,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# AUTH_USER_MODEL = 'users.CustomUser'
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
