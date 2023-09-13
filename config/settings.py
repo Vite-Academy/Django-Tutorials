@@ -33,7 +33,7 @@ INSTALLED_APPS = [
     # 'paginator.apps.PaginatorConfig',
     # 'user.apps.UserConfig',
     'file.apps.FileConfig',
-
+    'django_cleanup.apps.CleanupConfig'
 ]
 
 MIDDLEWARE = [
