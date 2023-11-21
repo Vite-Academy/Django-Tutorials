@@ -37,3 +37,8 @@ python manage.py createsuperuser
 
 - Create model:
 python manage.py makemigrations my_app
+
+
+Install all models:
+- Django: pip install Django
+- django-cleanup: pip install django-cleanup
