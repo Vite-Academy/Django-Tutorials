@@ -32,8 +32,9 @@ INSTALLED_APPS = [
     # 'todo.apps.TodoConfig',
     # 'paginator.apps.PaginatorConfig',
     # 'user.apps.UserConfig',
-    'file.apps.FileConfig',
-    'django_cleanup.apps.CleanupConfig'
+    # 'file.apps.FileConfig',
+    'viewsapp.apps.ViewsappConfig',
+    # 'django_cleanup.apps.CleanupConfig'
 ]
 
 MIDDLEWARE = [

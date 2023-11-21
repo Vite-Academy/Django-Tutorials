@@ -11,7 +11,8 @@ urlpatterns = [
     # path('', include('todo.urls'))
     # path('', include('paginator.urls'))
     # path('', include('user.urls'))
-    path('', include('file.urls')),
+    # path('', include('file.urls')),
+    path('', include('viewsapp.urls')),
     re_path(r'^media/(?P<path>.*)$', serve,{'document_root': settings.MEDIA_ROOT}),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
