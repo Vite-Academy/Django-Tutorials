@@ -27,14 +27,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'models.apps.ModelsConfig'
-    # 'forms.apps.FormsConfig'
-    # 'todo.apps.TodoConfig',
-    # 'paginator.apps.PaginatorConfig',
-    # 'user.apps.UserConfig',
-    # 'file.apps.FileConfig',
-    'viewsapp.apps.ViewsappConfig',
-    # 'django_cleanup.apps.CleanupConfig'
+    # 'django_cleanup.apps.CleanupConfig',
+    'todoapps.apps.TodoappsConfig',
 ]
 
 MIDDLEWARE = [

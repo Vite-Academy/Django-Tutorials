@@ -4,7 +4,6 @@ from django.contrib import messages
 from .forms import *
 from .models import *
 
-# Create your views here.
 def main(req):
     item_list = Todo.objects.order_by("-date")
     if req.method == "POST":
