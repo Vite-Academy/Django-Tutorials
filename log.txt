@@ -1,5 +1,5 @@
 - Create venv command:
-python -m venv env
+python -m venv venv
 
 - Activate venv:
 Linux: source venv/bin/activate
