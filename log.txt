@@ -2,8 +2,9 @@
 python -m venv env
 
 - Activate venv:
-Linux: source env/bin/activate
-Win: source env/Scripts/activate
+Linux: source venv/bin/activate
+Mac: source venv/bin/activate
+Win: source venv/Scripts/activate
 
 - Install Django:
 pip install Django==4.2.3
