@@ -1,0 +1,5 @@
+https://www.djangoproject.com/
+
+https://django-jazzmin.readthedocs.io/
+
+https://github.com/un1t/django-cleanup
