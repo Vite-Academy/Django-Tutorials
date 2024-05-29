@@ -1,5 +1,5 @@
 ## Django Tutorials
-### Learn more: [Django](https://djangopackages.org/)
+### Learn more: [djangopackages.org](https://djangopackages.org/)
 
 # [github.com/djangopackages](https://github.com/djangopackages/djangopackages)
 ### Documentation
