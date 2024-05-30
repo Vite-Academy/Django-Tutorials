@@ -1,5 +1,5 @@
 - Create venv command:
-python -m venv venv
+python3 -m venv venv
 
 - Activate venv:
 Linux: source venv/bin/activate
@@ -7,39 +7,44 @@ Mac: source venv/bin/activate
 Win: source venv/Scripts/activate
 
 - Install Django:
-pip install Django==4.2.3
+python3 -m pip install Django
 
 - Check Django version:
-python -m django --version
+python3 -m django --version
 
 - Create Django project:
 django-admin startproject config .
 
 - Create new Django aplication:
-python manage.py startapp app_name
+python3 manage.py startapp app_name
 
 - Create requirements.txt automatically:
-pip freeze > requirements.txt
+pip3 freeze > requirements.txt
 
 - Install all packages using requirements.txt:
-pip install -r requirements.txt 
+pip3 install -r requirements.txt 
 
 - Start server in local host:
-python manage.py runserver
+python3 manage.py runserver
 
 - Apply the migrations for apps 
-python manage.py migrate
+python3 manage.py migrate
 
 - Open python file using terminal:
-python manage.py shell
+python3 manage.py shell
 
 - Create super user:
-python manage.py createsuperuser
+python3 manage.py createsuperuser
 
 - Create model:
-python manage.py makemigrations my_app
+python3 manage.py makemigrations my_app
 
 
 Install all models:
 - Django: pip install Django
 - django-cleanup: pip install django-cleanup
+
+Author:
+shakhzodtojiev
+tojiyevshakhzod@gmail.com
+admin@123
