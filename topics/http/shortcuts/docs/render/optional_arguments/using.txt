@@ -1,0 +1,62 @@
+====================
+=== Django Docs ====
+====================
+
+using
+
+The NAME of a template engine to use for loading the template. 👇
+https://docs.djangoproject.com/en/5.0/ref/settings/#std-setting-TEMPLATES-NAME
+
+====================
+===== Chat GPT =====
+====================
+
+In Django, the `render()` function is a shortcut function used to render a given template 
+with a given context dictionary and returns an `HttpResponse` object with that rendered text. 
+The `render()` function typically takes at least two arguments: the request object and the template name. 
+Additionally, it can take an optional third argument, which is a dictionary of context variables.
+
+Here's a basic example of how you might use the `render()` function in a Django view:
+
+```python
+from django.shortcuts import render
+from django.http import HttpResponse
+
+def my_view(request):
+    # Some processing to generate context data
+    context = {
+        'variable1': 'value1',
+        'variable2': 'value2',
+    }
+    return render(request, 'my_template.html', context)
+```
+
+In this example:
+
+- `request` is the HttpRequest object that Django passes to your view function.
+- `'my_template.html'` is the name of the template to render.
+- `context` is a dictionary containing the variables you want to make available to the template.
+
+Inside the template (`my_template.html`), you can access these variables using 
+the syntax `{{ variable_name }}`. For example:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Template</title>
+</head>
+<body>
+    <p>Variable 1: {{ variable1 }}</p>
+    <p>Variable 2: {{ variable2 }}</p>
+</body>
+</html>
+```
+
+When this template is rendered, the placeholders `{{ variable1 }}` and `{{ variable2 }}` will be replaced 
+with the corresponding values from the context dictionary.
+
+So, in short, the `render()` function's attribute `using` is not something you directly specify when using 
+the function. It simply renders the template using the provided context dictionary. If you have multiple 
+template engines configured in your Django project, you can specify which one to use for rendering 
+by using the `using` parameter, but it's not commonly used in everyday Django development.
