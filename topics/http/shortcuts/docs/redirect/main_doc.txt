@@ -1,0 +1,16 @@
+redirect()
+
+redirect(to, *args, permanent=False, **kwargs)
+Returns an HttpResponseRedirect to the appropriate URL for the arguments passed. 👇
+https://docs.djangoproject.com/en/5.0/ref/request-response/#django.http.HttpResponseRedirect
+
+The arguments could be:
+
+A model: the model’s get_absolute_url() function will be called. 👇
+https://docs.djangoproject.com/en/5.0/ref/models/instances/#django.db.models.Model.get_absolute_url
+
+A view name, possibly with arguments: reverse() will be used to reverse-resolve the name. 👇
+https://docs.djangoproject.com/en/5.0/ref/urlresolvers/#django.urls.reverse 
+
+An absolute or relative URL, which will be used as-is for the redirect location.
+By default issues a temporary redirect; pass permanent=True to issue a permanent redirect.
