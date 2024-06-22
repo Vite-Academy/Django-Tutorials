@@ -6,6 +6,10 @@ Linux: source venv/bin/activate
 Mac: source venv/bin/activate
 Win: source venv/Scripts/activate
 
+=================================
+
+Django commands:
+
 - Install Django:
 python3 -m pip install Django
 
@@ -40,11 +44,15 @@ python3 manage.py createsuperuser
 python3 manage.py makemigrations my_app
 
 
-Install all models:
-- Django: pip install Django
-- django-cleanup: pip install django-cleanup
-
 Author:
 shakhzodtojiev
 tojiyevshakhzod@gmail.com
 admin@123
+
+=============================
+
+Install all models
+Project packages:
+- Django: pip install Django
+- django-jazzmin: pip3 install -U django-jazzmin
+- django-cleanup: pip3 install -U django-cleanup
