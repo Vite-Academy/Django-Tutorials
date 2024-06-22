@@ -2,4 +2,10 @@ https://www.djangoproject.com/
 
 https://django-jazzmin.readthedocs.io/
 
+https://django-hitcount.readthedocs.io/en/latest
+
 https://github.com/un1t/django-cleanup
+
+https://pillow.readthedocs.io/en/stable/
+
+https://django-ckeditor.readthedocs.io/en/latest/
