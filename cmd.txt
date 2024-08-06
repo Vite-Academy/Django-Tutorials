@@ -1,3 +1,6 @@
+=============================
+venv
+=============================
 - Create venv command:
 python3 -m venv venv
 
@@ -6,10 +9,10 @@ Linux: source venv/bin/activate
 Mac: source venv/bin/activate
 Win: source venv/Scripts/activate
 
-=================================
 
-Django commands:
-
+=============================
+Django commands
+=============================
 - Install Django:
 python3 -m pip install Django
 
@@ -21,12 +24,6 @@ django-admin startproject config .
 
 - Create new Django aplication:
 python3 manage.py startapp app_name
-
-- Create requirements.txt automatically:
-pip3 freeze > requirements.txt
-
-- Install all packages using requirements.txt:
-pip3 install -r requirements.txt 
 
 - Start server in local host:
 python3 manage.py runserver
@@ -44,15 +41,31 @@ python3 manage.py createsuperuser
 python3 manage.py makemigrations my_app
 
 
-Author:
-shakhzodtojiev
-tojiyevshakhzod@gmail.com
-admin@123
-
 =============================
-
+Models
+=============================
 Install all models
 Project packages:
 - Django: pip install Django
-- django-jazzmin: pip3 install -U django-jazzmin
-- django-cleanup: pip3 install -U django-cleanup
+- Django Jazzmin: pip3 install -U django-jazzmin
+- Django Cleanup: pip3 install -U django-cleanup
+- Django Hitcount: pip3 install -U django-hitcount
+- Pillow: python3 -m pip3 install -U Pillow
+- Django CKEditor 5: pip3 install -U django-ckeditor-5
+
+==============================
+requirements.txt 
+==============================
+- Create requirements.txt automatically:
+pip3 freeze > requirements.txt
+
+- Install all packages using requirements.txt:
+pip3 install -r requirements.txt 
+
+
+=============================
+Author
+=============================
+shakhzodtojiev
+tojiyevshakhzod@gmail.com
+admin@123
