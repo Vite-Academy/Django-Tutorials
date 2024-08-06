@@ -37,9 +37,11 @@ python3 manage.py shell
 - Create super user:
 python3 manage.py createsuperuser
 
-- Create model:
+- Makemigrations model:
 python3 manage.py makemigrations my_app
 
+- Migrate model:
+python3 manage.py migrate
 
 =============================
 Models
